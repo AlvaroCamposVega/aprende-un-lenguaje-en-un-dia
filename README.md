@@ -62,9 +62,9 @@ Realiza un programa que muestre por pantalla la frase **¡Hola mundo!**.
 
 Creado el archivo HolaMundo.js
 
-`
+```javascript
 console.log('Hola mundo');
-`
+```
 
 ![imagen hola mundo](/Imágenes/holamundo.png)
 
@@ -74,7 +74,7 @@ Dada una altura introducida por el usuario, realiza un programa que pinte una pi
 
 Creado el archivo Piramide.js
 
-`
+```javascript
 var altura = prompt("Dime la altura de la piramide: ");
 document.write( altura );
     
@@ -99,7 +99,10 @@ while (piso <= altura) {
     espacios--;
     longitud += 2;
 }
-`
+```
+
+![imagen hola mundo](/Imágenes/peticionAltura.png)
+![imagen hola mundo](/Imágenes/piramide.png)
 
 ### 3. Arrays y números aleatorios
 
@@ -107,7 +110,7 @@ Realiza un programa que rellene un array (o una estructura similar) con 20 núme
 
 Creado el archivo arrays.js
 
-`
+```javascript
 var num = [];
 var resultado = "";
 
@@ -153,7 +156,9 @@ for(var i = 0; i < 20; i++){
 }
 
 console.log(resultado);
-`
+```
+
+![imagen hola mundo](/Imágenes/arrays.png)
 
 ## Presentación de resultados
 
