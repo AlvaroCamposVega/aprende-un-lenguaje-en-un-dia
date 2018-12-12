@@ -61,6 +61,7 @@ Pon en práctica el lenguaje de programación realizando los siguientes ejercici
 Realiza un programa que muestre por pantalla la frase **¡Hola mundo!**.
 
 Creado el archivo HolaMundo.js
+
 `
 console.log('Hola mundo');
 `
@@ -70,6 +71,7 @@ console.log('Hola mundo');
 Dada una altura introducida por el usuario, realiza un programa que pinte una pirámide a base de asteriscos con la altura indicada.
 
 Creado el archivo Piramide.js
+
 `
 var altura = prompt("Dime la altura de la piramide: ");
 document.write( altura );
@@ -102,6 +104,7 @@ while (piso <= altura) {
 Realiza un programa que rellene un array (o una estructura similar) con 20 números enteros aleatorios entre 1 y 100 y que seguidamente los muestre por pantalla. A continuación, se deben pasar los números primos a las primeras posiciones del array y los no primos a las posiciones restantes. Muestra finalmente el array resultado.
 
 Creado el archivo arrays.js
+
 `
 var num = [];
 var resultado = "";
