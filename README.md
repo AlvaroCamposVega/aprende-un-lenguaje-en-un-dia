@@ -1,4 +1,4 @@
-# Aprende un lenguaje de programación en un día (ejercicio voluntario para subir nota).
+﻿# Aprende un lenguaje de programación en un día (ejercicio voluntario para subir nota).
 
 ## Introducción
 
@@ -65,6 +65,8 @@ Creado el archivo HolaMundo.js
 `
 console.log('Hola mundo');
 `
+
+![imagen hola mundo](/Imágenes/holamundo.png)
 
 ### 2. Pirámide
 
