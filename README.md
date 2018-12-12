@@ -44,11 +44,13 @@ Los papelitos se han recortado de este [documento](lenguajes_de_programacion.pdf
 
 ## Información sobre el lenguaje
 
-Busca páginas y/o manuales sobre el lenguaje de programación elegido. Escribe aquí las principales características: cuándo y para qué se creó, en qué ámbito se utiliza, cuáles son sus principales ventajas, etc. Pon aquí enlaces y capturas de pantalla.
+JavaScript se diseñó con una sintaxis similar a C, aunque adopta nombres y convenciones del lenguaje de programación Java. Sin embargo, Java y JavaScript tienen semánticas y propósitos diferentes. 
+
+Todos los navegadores modernos interpretan el código JavaScript integrado en las páginas web. Para interactuar con una página web se provee al lenguaje JavaScript de una implementación del Document Object Model (DOM). 
 
 ## Herramientas de desarrollo
 
-Indica aquí qué software has tenido que instalar para programar en este lenguaje. Añade enlaces y/o capturas de pantalla.
+Para la redacción de los comandos hemos usado el VisualCode Studio, y para su ejecución la consola de Google Chrome.
 
 ## Poniendo en práctica el lenguaje
 
@@ -58,13 +60,92 @@ Pon en práctica el lenguaje de programación realizando los siguientes ejercici
 
 Realiza un programa que muestre por pantalla la frase **¡Hola mundo!**.
 
+Creado el archivo HolaMundo.js
+
+console.log('Hola mundo');
+
 ### 2. Pirámide
 
 Dada una altura introducida por el usuario, realiza un programa que pinte una pirámide a base de asteriscos con la altura indicada.
 
+Creado el archivo Piramide.js
+
+var altura = prompt("Dime la altura de la piramide: ");
+document.write( altura );
+    
+var piso = 1;
+var longitud = 1;
+var espacios = altura-1;
+var resultado = "";
+      
+while (piso <= altura) {
+     
+    for (var i = 1; i <= espacios; i++) {
+        resultado += " ";
+    }
+
+    for (var i = 1; i <= longitud; i++) {
+        resultado += "*";
+    }
+
+    console.log(resultado);
+    resultado = "";
+    piso++;
+    espacios--;
+    longitud += 2;
+}
+
 ### 3. Arrays y números aleatorios
 
 Realiza un programa que rellene un array (o una estructura similar) con 20 números enteros aleatorios entre 1 y 100 y que seguidamente los muestre por pantalla. A continuación, se deben pasar los números primos a las primeras posiciones del array y los no primos a las posiciones restantes. Muestra finalmente el array resultado.
+
+Creado el archivo arrays.js
+
+var num = [];
+var resultado = "";
+
+console.log('Array original: ');
+
+for(var i = 0; i < 20; i++){
+    num.push(Math.floor(Math.random()*100)+1);
+    resultado += (num[i] + " ");
+}
+
+console.log(resultado);
+
+console.log('Array ordenado: ');
+
+resultado = "";
+
+var esPrimo;
+
+for(var i = 0; i < 20; i++){
+    esPrimo = true;
+    for (var j = 2; j < num[i]; j++) {
+        if ((num[i] % j) == 0) {
+            esPrimo = false;
+        }
+    }
+
+    if (esPrimo) {
+        resultado += num[i] + " ";
+    }
+}
+
+for(var i = 0; i < 20; i++){
+    esPrimo = true;
+    for (var j = 2; j < num[i]; j++) {
+        if ((num[i] % j) == 0) {
+            esPrimo = false;
+        }
+    }
+
+    if (!esPrimo) {
+        resultado += (num[i] + " ");
+    }
+}
+
+console.log(resultado);
 
 ## Presentación de resultados
 
